@@ -12,7 +12,7 @@ endif()
 project ("SingletonDP")
 
 # Добавьте источник в исполняемый файл этого проекта.
-add_executable (SingletonDP "SingletonDP.cpp" "SingletonDP.h")
+add_executable (SingletonDP "SingletonDP.cpp" "SingletonDP.h" "src/main.cpp" "tests/tests.cpp")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET SingletonDP PROPERTY CXX_STANDARD 20)
